@@ -68,3 +68,46 @@ footer {
   font-size: 14px;
   margin-top: 40px;
 }
+/* Hero Bölümü */
+.hero {
+  position: relative;
+  text-align: center;
+  color: #fff;
+  padding: 100px 20px;
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.6)),
+    url("https://images.unsplash.com/photo-1600289031463-7a6b79a4ee8c?auto=format&fit=crop&w=1600&q=80")
+    center/cover no-repeat;
+  border-bottom: 5px solid #f5c842;
+  box-shadow: 0 6px 24px rgba(0,0,0,.25);
+  transition: background 0.3s ease-in-out;
+}
+
+.hero h1 {
+  font-size: clamp(28px, 4vw, 46px);
+  font-weight: 800;
+  margin-bottom: 12px;
+  text-shadow: 0 3px 8px rgba(0, 0, 0, 0.6);
+}
+
+.hero .lead {
+  font-size: 18px;
+  color: #f2f2f2;
+  margin-bottom: 22px;
+}
+
+.cta {
+  background: #f5c842;
+  color: #000;
+  padding: 14px 28px;
+  border-radius: 12px;
+  font-weight: 700;
+  text-decoration: none;
+  box-shadow: 0 6px 20px rgba(245,200,66,0.3);
+  transition: all 0.25s ease;
+}
+.cta:hover {
+  background: #eab308;
+  transform: scale(1.05) translateY(-2px);
+  box-shadow: 0 8px 24px rgba(245,200,66,0.45);
+}
