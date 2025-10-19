@@ -2,22 +2,28 @@
 <html lang="et">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Rezerve24.ee – Ilu & massaž teenused ühes kohas</title>
-  <meta name="description" content="Broneeri ilu, massaž ja heaoluteenused ühe klõpsuga. Kiire, lihtne, 24/7.">
-  <meta property="og:title" content="Rezerve24.ee" />
-  <meta property="og:description" content="Broneeri ilu, massaž ja heaoluteenused ühe klõpsuga." />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Rezerve24.ee – Ilu & massaž ühes kohas</title>
+  <meta name="description" content="Broneeri oma aeg kohe – lihtne, kiire, 24/7. Valik salonge ja terapeute, läbipaistev hind, kinnitus kohe e-postile." />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Rezerve24.ee – Ilu & massaž ühes kohas" />
+  <meta property="og:description" content="Broneeri oma aeg kohe – lihtne, kiire, 24/7." />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://rezerve24.ee" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="styles.css?v=2">
+  <meta property="og:url" content="https://rezerve24.ee/" />
+
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css?v=3">
 </head>
 <body>
+
+  <!-- Üst bar -->
   <header class="site-header">
     <div class="wrap">
-      <div class="brand"><span class="dot"></span><a href="/">Rezerve24.ee</a></div>
+      <a class="brand" href="#top">Rezerve24.ee</a>
       <nav class="top-nav">
         <a href="#how">Kuidas töötab</a>
         <a href="#partners">Partnerid</a>
@@ -26,80 +32,89 @@
     </div>
   </header>
 
-  <main class="layout">
-    <aside class="ads" aria-label="Reklaamid">
+  <main>
+
+    <!-- Reklaam/Soovitused (soliidne, sade kart-visiit) -->
+    <aside class="ads" aria-label="Soovitatud salongid">
       <h2>Soovitatavad salongid</h2>
-      <a class="ad-card" href="#" target="_blank" rel="noopener">
+
+      <a class="ad-card" href="#">
         <div class="ad-badge">UUS</div>
         <div class="ad-title">Studio Lumi</div>
         <div class="ad-text">Näohooldus · Ripsmed · Kulmud</div>
         <div class="ad-cta">Vaata pakkumisi →</div>
       </a>
-      <a class="ad-card" href="#" target="_blank" rel="noopener">
+
+      <a class="ad-card" href="#">
         <div class="ad-title">Tallinn Massage</div>
-        <div class="ad-text">Klassikaline & sportmassaaž</div>
+        <div class="ad-text">Klassikaline &amp; spordimassaaž</div>
         <div class="ad-cta">Broneeri aeg →</div>
       </a>
-      <a class="ad-card" href="#" target="_blank" rel="noopener">
+
+      <a class="ad-card" href="#">
         <div class="ad-title">Gold Nail Bar</div>
         <div class="ad-text">Maniküür · Pediküür</div>
         <div class="ad-cta">Kõik teenused →</div>
       </a>
+
       <p class="ad-note">Reklaam: Soovid siia? <a href="#contact">Võta ühendust</a></p>
     </aside>
 
-    <section class="hero">
-      <div class="hero-strip">
-        <h1>Ilu & massaž ühes kohas</h1>
+    <!-- HERO: foto + gradient overlay + CTA -->
+    <section class="hero" id="top" aria-label="Kodulehe kangelassektsioon">
+      <div class="hero__content">
+        <h1>Ilu &amp; massaž ühes kohas</h1>
         <p class="lead">Broneeri oma aeg kohe – lihtne, kiire, 24/7.</p>
         <a class="cta" href="#book">Broneeri nüüd</a>
         <ul class="checks">
           <li>✔ Valik salonge ja terapeute</li>
           <li>✔ Läbipaistev hind</li>
-          <li>✔ Kinnitus kohe e-posti teel</li>
+          <li>✔ Kinnitus kohe e-postile</li>
         </ul>
       </div>
-
-      <div id="how" class="steps">
-        <h2>Kuidas töötab?</h2>
-        <ol>
-          <li>Vali teenus või salong</li>
-          <li>Vali aeg & kinnita</li>
-          <li>Saad kinnituse kohe</li>
-        </ol>
-      </div>
-
-      <div id="book" class="booking-box">
-        <h3>Kiirbroneering</h3>
-        <form onsubmit="return submitDemo(event)">
-          <label>Teenus
-            <select required>
-              <option value="">Vali…</option>
-              <option>Näohooldus</option>
-              <option>Massaž</option>
-              <option>Maniküür</option>
-            </select>
-          </label>
-          <label>Kuupäev
-            <input type="date" required />
-          </label>
-          <label>Kellaaeg
-            <input type="time" required />
-          </label>
-          <button type="submit" class="cta small">Kinnita</button>
-          <p class="muted">* Demo-vorm – ühendame päris broneerimisega hiljem.</p>
-        </form>
-      </div>
     </section>
+
+    <!-- Kuidas töötab -->
+    <section id="how" class="steps">
+      <h2>Kuidas töötab?</h2>
+      <ol>
+        <li>Vali teenus või salong</li>
+        <li>Vali aeg &amp; kinnita</li>
+        <li>Saad kinnituse kohe</li>
+      </ol>
+
+      <!-- Kiirbroneering (demo) -->
+      <form id="book" class="quick-book" onsubmit="event.preventDefault(); alert('Demo – päris broneerimine lisame hiljem.');">
+        <label>
+          Teenus
+          <select required>
+            <option value="">Vali…</option>
+            <option>Näohooldus</option>
+            <option>Maniküür</option>
+            <option>Massaaž</option>
+          </select>
+        </label>
+        <label>
+          Kuupäev
+          <input type="date" required>
+        </label>
+        <label>
+          Kellaaeg
+          <input type="time" required>
+        </label>
+        <button type="submit">Kinnita</button>
+      </form>
+      <p class="demo-note">* Demo-vorm – ühendame päris broneerimisega hiljem.</p>
+    </section>
+
   </main>
 
-  <footer id="contact" class="site-footer">
+  <footer id="contact">
     <div class="wrap">
-      <div>© <span id="y"></span> Rezerve24.ee</div>
-      <div>Reklaam/partnerlus: <a href="mailto:hello@rezerve24.ee">hello@rezerve24.ee</a></div>
+      <p>© Rezerve24.ee</p>
+      <p>Reklaam/partnerlus: <a href="mailto:hello@rezerve24.ee">hello@rezerve24.ee</a></p>
     </div>
   </footer>
 
-  <script src="scripts.js"></script>
 </body>
 </html>
